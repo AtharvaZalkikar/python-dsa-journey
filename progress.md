@@ -12,9 +12,9 @@ Topics may change at any point, but numbering will always continue sequentially.
 
 **Phase:** Python Problem-Solving Foundations
 
-**Current Topic:** Dictionaries
+**Current Topic:** Sets / Strings
 
-**Current Problem:** 006
+**Current Problem:** 010
 
 **Goal:** Build strong problem-solving ability, not just interview survival.
 
@@ -30,6 +30,9 @@ Topics may change at any point, but numbering will always continue sequentially.
 | 004 | First Duplicate | Sets | Seen Elements | Easy | Yes | No | Edge-case handling |
 | 005 | Most Frequent Number | Dictionaries | Frequency Counting | Easy | With guidance | Syntax refresher | Dictionary mechanics |
 | 006 | First Unique Number | Dictionaries | Frequency Counting | Easy | Yes | No | Two-pass frequency approach; dictionary insertion order |
+| 007 | Common Elements | Sets | Set Membership / Order Preservation | Easy | Yes | No | Using a set for membership while preserving list order |
+| 008 | First Common Character | Strings | Set Membership / Early Return | Easy | Yes | No | Using a set for membership; avoiding unnecessary intermediate work |
+| 009 | Unique Numbers | Sets | Seen Elements / Order Preservation | Easy | Yes | No | Using a set for uniqueness while using a list to preserve first-appearance order |
 
 \* Problem 001 was solved independently during the later reconstruction.
 
@@ -46,8 +49,8 @@ Topics may change at any point, but numbering will always continue sequentially.
 - [x] Dictionary fundamentals
 - [x] Dictionary frequency counting
 - [ ] Dictionary fluency
-- [ ] Set fluency
-- [ ] String manipulation
+- [x] Set fundamentals
+- [x] String fundamentals
 - [ ] Functions
 - [ ] Recursion basics
 - [ ] Searching
@@ -116,6 +119,32 @@ Built a frequency dictionary and then iterated through its keys to find the firs
 Important observation:
 
 Python dictionaries preserve insertion order, so the order of first appearance is retained.
+
+### Problem 007 — Common Elements
+
+Used a set for membership checking and a list to preserve the required order from the first list.
+
+Key learning:
+
+A set is useful when we need efficient membership checks, while the original list can be used to preserve ordering and avoid duplicate output.
+
+### Problem 008 — First Common Character
+
+Used a set created from the second string for efficient membership checking while scanning the first string.
+
+Key learning:
+
+When repeatedly asking whether a value exists in a collection, a set can provide a better membership-checking structure.
+
+Also learned that unnecessary intermediate collections can sometimes be avoided by returning as soon as the required answer is found.
+
+### Problem 009 — Unique Numbers
+
+Used a set to track values that had already appeared while using a list to preserve the order of first appearance.
+
+Key learning:
+
+A set is useful for uniqueness/membership, while a list can preserve the required output order.
 
 ### Dictionary Application Checkpoint
 
