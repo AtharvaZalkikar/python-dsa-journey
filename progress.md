@@ -12,9 +12,9 @@ Topics may change at any point, but numbering will always continue sequentially.
 
 **Phase:** Python Problem-Solving Foundations
 
-**Current Topic:** Sets / Strings
+**Current Topic:** Hash Maps / Complement Lookup
 
-**Current Problem:** 010
+**Current Problem:** 011
 
 **Goal:** Build strong problem-solving ability, not just interview survival.
 
@@ -33,6 +33,8 @@ Topics may change at any point, but numbering will always continue sequentially.
 | 007 | Common Elements | Sets | Set Membership / Order Preservation | Easy | Yes | No | Using a set for membership while preserving list order |
 | 008 | First Common Character | Strings | Set Membership / Early Return | Easy | Yes | No | Using a set for membership; avoiding unnecessary intermediate work |
 | 009 | Unique Numbers | Sets | Seen Elements / Order Preservation | Easy | Yes | No | Using a set for uniqueness while using a list to preserve first-appearance order |
+| 010 | First Non-Repeating Character | Dictionaries | Frequency Counting / First Unique | Easy | Yes | No | Independently recognized frequency counting and dictionary insertion order
+| 011 | Two Sum | Hash Maps | Complement Lookup | Easy | Guided → Reimplemented independently | Yes | First exposure to complement lookup; learned hash-map usage and independently reconstructed the pattern
 
 \* Problem 001 was solved independently during the later reconstruction.
 
@@ -48,6 +50,8 @@ Topics may change at any point, but numbering will always continue sequentially.
 - [x] Maintaining state
 - [x] Dictionary fundamentals
 - [x] Dictionary frequency counting
+- [x] Hash Map / key-value concept
+- [x] Basic hash-map lookup concept
 - [ ] Dictionary fluency
 - [x] Set fundamentals
 - [x] String fundamentals
@@ -61,9 +65,9 @@ Topics may change at any point, but numbering will always continue sequentially.
 
 - [x] Understand a simple problem
 - [x] Translate a simple idea into code
-- [ ] Choose the right data structure consistently
-- [ ] Recognize common patterns
-- [ ] Handle unfamiliar problems confidently
+- [~] Choose the right data structure consistently
+- [~] Recognize common patterns
+- [ ] Handle unfamiliar problems confidently 
 - [ ] Solve under time pressure
 - [ ] Explain approach while coding
 - [ ] Debug under interview pressure
@@ -146,6 +150,12 @@ Key learning:
 
 A set is useful for uniqueness/membership, while a list can preserve the required output order.
 
+### Problem 011 — Two Sum / Hash Map Introduction
+
+Introduced the complement lookup pattern. For each number, calculate needed = target - number, check whether the needed value has already been seen, and otherwise store the current number with its index.
+Key learning: choose a data structure based on the information the problem requires. A set answers existence/membership questions; a dictionary can store associated information such as counts or indices.
+Also introduced the concept of hash maps, hashing, collisions, and average O(1) lookup.
+
 ### Dictionary Application Checkpoint
 
 **Mini Challenge — All Numbers Occurring Once**
@@ -171,9 +181,9 @@ Frequency counting can be reused for different problems by changing what we do w
 
 - [x] First problem solved
 - [x] First 5 problems completed
-- [ ] First 10 problems completed
+- [x] First 10 problems completed
 - [ ] Python Foundations completed
-- [ ] First problem solved without any hints
+- [x] First problem solved without any hints
 - [ ] First Medium problem solved independently
 - [ ] First timed problem completed
 - [ ] First mock interview completed
